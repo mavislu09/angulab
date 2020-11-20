@@ -1,0 +1,12 @@
+<div style = "border: 1px solid aquamarine">
+<h1>Chat ISPA</h1>
+<h3>{{nombre}}</h3>
+<p>{{mensajes}}</p>
+<h6>{{year}}</h6> <!--Llaves de interpolacion-->
+<!--String interpolation: angular se encarga de interretar el valor de una variable o ejecutar funciones y este resultado lo muestra en pantalla-->
+</div>
+<h1>{{getVideojuego()}}</h1>
+<img [src]="imagenUrl" alt="" height="200px"><br>
+<button [disabled]="botonStatus">Enviar</button>
+<button [class.activo]="online">online</button>
+<button [style.background]="online?'green':'red'">Activo</button>
